@@ -32,5 +32,4 @@
         - Kỹ thuật đơn giản thường dùng một cáp nối tất cả các máy, tốc độ thường là 10Mbps, 100Mbps, 1Gbps và gần đây có 100Gbps.
         - Các kiến trúc mạng **Lan**: Mạng tuyến(Bus), Mạng vòng(Ring), Mạng sao(Star), Mạng lứoi(Mesh).
     + **MAN** (**M**etropolitan **A**rea **N**etwork - Mạng đô thị): Lớn hơn mạng Lan bao gồm nhiều văn phòng, khu vực với nhau
-    ![](man)
-    [man]: https://github.com/xuanbinh99/Networking/blob/master/images/Man.png
+    ![](https://github.com/xuanbinh99/Networking/blob/master/images/Man.png)
