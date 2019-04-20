@@ -33,4 +33,4 @@
         - Các kiến trúc mạng **Lan**: Mạng tuyến(Bus), Mạng vòng(Ring), Mạng sao(Star), Mạng lứoi(Mesh).
     + **MAN** (**M**etropolitan **A**rea **N**etwork - Mạng đô thị): Lớn hơn mạng Lan bao gồm nhiều văn phòng, khu vực với nhau
     ![](man)
-    [Man]: /images/Man.png
+    [man]: https://github.com/xuanbinh99/Networking/blob/master/images/Man.png
