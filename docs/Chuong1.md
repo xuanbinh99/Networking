@@ -1,4 +1,4 @@
-[2. Mạng máy tính](#2-mạng-máy-tính-)
+[2. Mạng máy tính](#2-mạng-máy-tính)
 
 # **Giới thiệu chung về Networking**
 
