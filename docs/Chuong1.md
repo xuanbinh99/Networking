@@ -32,20 +32,22 @@
         - Kỹ thuật đơn giản thường dùng một cáp nối tất cả các máy, tốc độ thường là 10Mbps, 100Mbps, 1Gbps và gần đây có 100Gbps.
         - Các kiến trúc mạng **Lan**: Mạng tuyến(Bus), Mạng vòng(Ring), Mạng sao(Star), Mạng lứoi(Mesh).
 
-    ![](https://github.com/xuanbinh99/Networking/blob/master/images/Lan.png)
+    ![](../images/Lan.png)
 
     + **MAN** (**M**etropolitan **A**rea **N**etwork - Mạng đô thị): Lớn hơn mạng Lan bao gồm nhiều văn phòng, khu vực với nhau, 
         - Mạng này có tối đa 2 dây cáp
         - Không dùng các kỹ thuật nối chuyển
         - Hỗ trợ thêm cả đàm thoại, vận tốc có thể đạt tới 10Gbps.
 
-    ![](https://github.com/xuanbinh99/Networking/blob/master/images/Man.png)
+    ![](../images/Man.png)
 
     + **WAN** (**W**ide **A**rea **N**etwork - Mạng diện rộng): Dùng trong vùng địa lý như các quốc gia hay châu lục, mạng con có 2 thành phần chính:
         - Các đường dây vận chuyển còn gọi là mạch (circuit), kênh (channel), hay đường trung chuyển (trunk).
         - Các thiết bị nối chuyển
     
-    ![](https://github.com/xuanbinh99/Networking/blob/master/images/Wan.png)
+    ![](../images/Wan.png)
+
+    + **GAN** (**G**lobal **A**rea **N**etwork): là mạng của các Wan, trải rộng trên phạm vi toàn cầu
 
 * Dựa trên mô hình xử lý:
     + Mô hình **điểm - điểm** (*point-to-point*): 
@@ -54,17 +56,21 @@
  
         Mạng hình sao (star) cho phép nối các máy tính vào một bộ tập trung (hub) bằng cáp xoắn.
 
-         ![](https://github.com/xuanbinh99/Networking/blob/master/images/Sao.png)
+         ![](../images/Sao.png)
 
         Mạng cây (tree) là mô hình phân cấp gồm một nút gốc hoặc 1 hub nối đến các nút mức hai hoặc hub mức 2, các thiết bị ở mức 2 lại nối với các mức 3...
 
-        ![](https://github.com/xuanbinh99/Networking/blob/master/images/Cay.png)
+        ![](../images/Cay.png)
 
     + Mô hình **điểm - nhiều điểm** (*Broadcast*) :
         - Mạng tuyến tính (Bus Network): 
             - Ưu điểm: Dễ thiết kế và chi phí thấp.
             - Khuyết điểm: Tính ổn định kém, chỉ một nút mạng hỏng là toàn bộ mạng bị ngừng hoạt động.
 
-        ![](https://github.com/xuanbinh99/Networking/blob/master/images/Bus.png)
+        ![](../images/Bus.png)
 
-        - 
+        - Mạng vòng: tất cả các nút được nối đến một vòng
+
+        ![](../images/Ring.png)
+
+### **Mô hình 
