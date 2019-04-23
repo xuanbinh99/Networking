@@ -73,4 +73,67 @@
 
         ![](../images/Ring.png)
 
-### **Mô hình 
+### **4. Mô hình OSI** 
+  
+   + **Khái niệm**
+
+        - **Mô hình OSI** (**O**pen **S**ystems **I**nterconnection Reference Model, viết ngắn là OSI Model hoặc OSI Reference Model) - tạm dịch là Mô hình **tham chiếu kết nối hệ thống mở** - là một thiết kế dựa vào nguyên lý tầng cấp, lý giải kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.
+        - Mô hình này được phát triển thành một phần trong kế hoạch Kết nối các hệ thống mở (Open Systems Interconnection) do **ISO** và **IUT-T** khởi xướng. Nó còn được gọi là *Mô hình bảy tầng của OSI*.
+    
+    + **Mô hình**
+
+        ![](https://techvccloud.mediacdn.vn/2018/9/14/photo-1-15368989749951226056584.jpg)
+
+        *7 lớp trong mô hình OSI*
+
+        - **Application** - Tầng ứng dụng: 
+            + Cung cấp giao diện cho ứng dụng và người dùng có thể tương tác thông với chương trình ứng dụng đó, cho phép người dùng truy nhập các thông tin và dữ liệu trên mạng thông qua chương trình ứng dụng
+            + Ví dụ các ứng dụng trong tầng này gồm: *Telnet*, Giao thức truyền tập tin *FT*P và Giao thức truyền thư điện tử *SMTP*, *HTTP*, *X.400 Mail remote*.
+
+        - **Presentation** - Tầng trình diễn:   
+            + Tại máy gửi tầng này nhận nhiệm vụ nhận dữ liệu từ *tầng ứng dụng* mã hóa chúng thành một dạng chung và nén chúng lại(mục đích làm giảm dữ liệu truyền trên mạng)
+            + Tại máy nhận nó dịch dữ liệu nhận được từ *tầng phiên* để đưa về *tầng ứng dụng*.
+            + Ví dụ về Presentation bao gồm mã hóa, *ASCII*, *EBCDIC*, *TIFF*, *GIF*, *PICT, JPEG, MPEG, MIDI*.
+
+        - **Session** - Tầng phiên: 
+            + Kiểm soát các (phiên) hội thoại giữa các máy tính. Tầng này thiết lập, quản lý và kết thúc các kết nối giữa các trình ứng dụng. 
+            + Có trách nhiệm kiểm tra và phục hồi phiên, đây là phần thường không được dùng đến trong bộ giao thức **TCP/IP**.
+            + Ví dụ về Session bao gồm *NFS*, *NetBios Name*, *RPC*, *SQL*.
+
+        - **Transport** - Tầng giao vận: 
+            + Cung cấp dịch vụ chuyên dụng chuyển dữ liệu giữa thiết bị đầu cuối hoặc các host.  Tầng giao vận kiểm soát độ tin cậy của một kết nối được cho trước.
+            + Chịu trách nhiệm cho việc phục hồi lỗi *end-to-end* và kiểm soát luồng từ đầu đến cuối.
+            + Ví dụ về lớp transport bao gồm *SPX, TCP, UDP*.
+
+        - **Network** - Tầng mạng: 
+            + Lớp này cung cấp các công nghệ chuyển mạch và định tuyến, hay còn được biết đến là các mạch ảo, giúp truyền dữ liệu từ nút mạng này sang nút mạng khác.
+            + Tại máy gửi dữ liệu sẽ được chia thành các gói nhỏ để tránh tình trạng kích thước dữ liệu vượt quá dung lượng tối đa của 1 gói, sau đó thực hiện gán cho mỗi gói một thứ tự nhận dạng.
+            + Tại máy nhận, khi dữ liệu đến, lớp **Network** sẽ chịu trách nhiệm kiểm tra thứ tự nhận dạng của các gói để lấy cơ sở sắp xếp chúng đúng với thứ tự đã được gán khi gửi.
+            + Ví dụ về lớp Network bao gồm *AppleTalk DDP, IP, IPX.*
+
+        - **Data link** - Tầng liên kết dữ liệu:
+            + Trong mô hình OSI, tại lớp 2, các gói dữ liệu sẽ được mã hóa và giải mã thành các bit,quản lý, xử lý các lỗi trong lớp physical, điều khiển luồng và đồng bộ hóa frame
+            + Được chia làm 2 lớp con: 
+                + Lớp Media Access Control (MAC): Kiểm soát việc truy cập và truyền tải dữ liệu của máy tính trên mạng.
+                + Logical Link Control (LLC): Kiểm soát đồng bộ hóa frame, kiểm soát luồng và kiểm tra lỗi.
+            + Ví dụ về Data link bao gồm *PPP, FDDI, ATM, IEEE 802.5 / 802.2, IEEE 802.3 / 802.2, HDLC, Frame Relay.*
+
+        - **Physical** - Tầng vật lý:
+            +  Lớp này cung cấp các tài nguyên phần cứng để gửi và nhận dữ liệu  bao gồm xác định cáp, card và các thành phần vật lý
+            + Ví dụ *Fast Ethernet, RS232* và *ATM*.
+### **5. Phân biệt giao thức UDP và TCP**.
+* Giống nhau:
+    + Đều là giao thức cốt lõi của giao thức **TCP/IP** và nằm trong tầng **Transport** trong mô hình **OSI**, sử dụng để gửi các bit dữ liệu - được gọi là các gói tin - qua Internet.
+    + Những gói tin này được xử lý tương tự bởi vì chúng được chuyển tiếp từ máy tính của bạn đến router trung gian và đến điểm đích.
+* Khác nhau:
+
+    |Tiêu chí|UDP|TCP|
+    |---|---|---|
+    |Cách truyền tải|**U**ser **D**atagram **P**rotocol - "Giao thức gói dữ liệu người dùng". Dùng **UDP**, chương trình trên mạng máy tính có thể gửi những dữ liệu ngắn được gọi là *datagram* tới máy khác.|**T**ransmission **C**ontrol **P**rotocol – “Giao thức điều khiển truyền vận”. Sử dụng **TCP**., các ứng dụng trên các máy chủ được nối mạng có thể tạo các "kết nối" với nhau, mà qua đó chúng có thể trao đổi dữ liệu hoặc các gói tin|
+    |Tốc độ truyền tải|Cao - do gói tin được chia nhỏ| Thấp - do việc đảm bảo độ tin cậy và toàn vẹn dữ liệu( **TCP** phải thực hiện nhiều bước để có thể kết nối rồi truyền dữ liệu)|
+    |Hoạt động|Theo hướng không kết nối(connectionless) - Không cần kết nối giữa 2 máy|Theo hướng kết nối(connection-oriented) - Thực hiện kết nối rồi chuyển dữ liệu|
+    |Tính chất|Cho phép mất dữ liệu, không đảm bảo tin cậy, không sắp xếp thứ tự gói tin|Không cho phép mất dữ liệu, đảm bảo sự tin cậy, sắp xếp thứ tự các gói tin khi nhận|
+    |Ứng dụng|Trong VoIP(công nghệ truyền hội thoại qua mạng), xem phim và chơi game trực tuyến hoặc ứng dụng trong **DNS**(Hệ thống phân giải tên miền)| **HTTP/HTTPS** (World Wide Web), **SMTP/POP3/IMAP** (e-mail) và **FTP** (truyền file)|
+
+
+        
