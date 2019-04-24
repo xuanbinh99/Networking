@@ -78,17 +78,15 @@
    + **Khái niệm**
 
         - **Mô hình OSI** (**O**pen **S**ystems **I**nterconnection Reference Model, viết ngắn là OSI Model hoặc OSI Reference Model) - tạm dịch là Mô hình **tham chiếu kết nối hệ thống mở** - là một thiết kế dựa vào nguyên lý tầng cấp, lý giải kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.
-        - Mô hình này được phát triển thành một phần trong kế hoạch Kết nối các hệ thống mở (Open Systems Interconnection) do **ISO** và **IUT-T** khởi xướng. Nó còn được gọi là *Mô hình bảy tầng của OSI*.
+        - Mô hình này được phát triển thành một phần trong kế hoạch **Kết nối các hệ thống mở** (Open Systems Interconnection) do **ISO** và **IUT-T** khởi xướng. Nó còn được gọi là *Mô hình bảy tầng của OSI*.
     
     + **Mô hình**
 
-        ![](https://techvccloud.mediacdn.vn/2018/9/14/photo-1-15368989749951226056584.jpg)
-
-        *7 lớp trong mô hình OSI*
+        ![*7 lớp trong mô hình OSI*](https://techvccloud.mediacdn.vn/2018/9/14/photo-1-15368989749951226056584.jpg "Mô hình OSI")
 
         - **Application** - Tầng ứng dụng: 
             + Cung cấp giao diện cho ứng dụng và người dùng có thể tương tác thông với chương trình ứng dụng đó, cho phép người dùng truy nhập các thông tin và dữ liệu trên mạng thông qua chương trình ứng dụng
-            + Ví dụ các ứng dụng trong tầng này gồm: *Telnet*, Giao thức truyền tập tin *FT*P và Giao thức truyền thư điện tử *SMTP*, *HTTP*, *X.400 Mail remote*.
+            + Ví dụ các ứng dụng trong tầng này gồm: *Telnet*, Giao thức truyền tập tin *FTP* và Giao thức truyền thư điện tử *SMTP*, *HTTP*, *X.400 Mail remote*.
 
         - **Presentation** - Tầng trình diễn:   
             + Tại máy gửi tầng này nhận nhiệm vụ nhận dữ liệu từ *tầng ứng dụng* mã hóa chúng thành một dạng chung và nén chúng lại(mục đích làm giảm dữ liệu truyền trên mạng)
@@ -135,5 +133,4 @@
     |Tính chất|Cho phép mất dữ liệu, không đảm bảo tin cậy, không sắp xếp thứ tự gói tin|Không cho phép mất dữ liệu, đảm bảo sự tin cậy, sắp xếp thứ tự các gói tin khi nhận|
     |Ứng dụng|Trong VoIP(công nghệ truyền hội thoại qua mạng), xem phim và chơi game trực tuyến hoặc ứng dụng trong **DNS**(Hệ thống phân giải tên miền)| **HTTP/HTTPS** (World Wide Web), **SMTP/POP3/IMAP** (e-mail) và **FTP** (truyền file)|
 
-
-        
+### **6. 
