@@ -76,15 +76,13 @@
 ### **4. Mô hình OSI** 
   
    + **Khái niệm**
-
         - **Mô hình OSI** (**O**pen **S**ystems **I**nterconnection Reference Model, viết ngắn là OSI Model hoặc OSI Reference Model) - tạm dịch là Mô hình **tham chiếu kết nối hệ thống mở** - là một thiết kế dựa vào nguyên lý tầng cấp, lý giải kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.
         - Mô hình này được phát triển thành một phần trong kế hoạch **Kết nối các hệ thống mở** (Open Systems Interconnection) do **ISO** và **IUT-T** khởi xướng. Nó còn được gọi là *Mô hình bảy tầng của OSI*.
-    
+
     + **Mô hình**
 
 
         ![*7 lớp trong mô hình OSI*](https://techvccloud.mediacdn.vn/2018/9/14/photo-1-15368989749951226056584.jpg "Mô hình OSI")
-
 
         - **Application** - Tầng ứng dụng: 
             + Cung cấp giao diện cho ứng dụng và người dùng có thể tương tác thông với chương trình ứng dụng đó, cho phép người dùng truy nhập các thông tin và dữ liệu trên mạng thông qua chương trình ứng dụng
