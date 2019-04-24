@@ -118,6 +118,14 @@
     - **Physical** - Tầng vật lý:
         +  Lớp này cung cấp các tài nguyên phần cứng để gửi và nhận dữ liệu  bao gồm xác định cáp, card và các thành phần vật lý
         + Ví dụ *Fast Ethernet, RS232* và *ATM*.
+    
++ **Quy trình làm việc**
+
+    ![](../images/quytrinh.gif)
+
+    Gói tin gửi từ A sẽ đi qua các tầng và mỗi tầng thực hiện các chức năng của mình để gửi gói tin sang máy B
+
++ **Lý do phải chia nhỏ gói tin ở mỗi tầng khi truyền tin :** Do mỗi gói tin có một 
 
 ### **5. Phân biệt giao thức UDP và TCP**.
 * Giống nhau:
@@ -133,4 +141,22 @@
     |Tính chất|Cho phép mất dữ liệu, không đảm bảo tin cậy, không sắp xếp thứ tự gói tin|Không cho phép mất dữ liệu, đảm bảo sự tin cậy, sắp xếp thứ tự các gói tin khi nhận|
     |Ứng dụng|Trong VoIP(công nghệ truyền hội thoại qua mạng), xem phim và chơi game trực tuyến hoặc ứng dụng trong **DNS**(Hệ thống phân giải tên miền)| **HTTP/HTTPS** (World Wide Web), **SMTP/POP3/IMAP** (e-mail) và **FTP** (truyền file)|
 
-### **6. 
+### **6. Tìm hiểu về Router, Switch, Hub, Repeater**
+* **Router** 
+    + *Router* hay *thiết bị định tuyến* hoặc *bộ định tuyến*, là một thiết bị mạng máy tính nhằm kết nối 2 hay nhiều mạng với nhau để truyền dữ liệu, trong mô hình **OSI** Router nằm ở tầng Network.
+    + *Router* là thiết bị tìm đường đi cho các gói tin trên mạng, nó không phải là một thiết bị chuyển mạch
+
+    ![](../images/Router.JPG)
+* **Switch**
+    + *Switch* là thiết bị ghép nối mạng, khi có gói tin được gửi *Switch* sẽ ghi lại và gửi tới mạng đích.
+    + *Switch* còn có thể tạo các VLAN(mạng Lan ảo) nhằm làm tăng hiệu quả sử dụng
+
+    ![](../images/switch.jpeg)
+* **Repeater**
+    + Một gói tin có thể truyền tối đa 100m khi gửi qua mạng, nếu muốn gói tin này được gửi đi xa hơn ta dùng **Repeater** để khuếch đại tín hiệu.
+    + là một thiết bị ở tầng **Physical** trong mô hình **OSI**
+* **Hub**
+    + Hub thông thường có 4, 8, 12 và 24 port và là trung tâm của mạng hình sao. Khi một máy tính gửi yêu cầu đến một máy khác, thì nó sẽ gửi đến Hub rồi gửi ra tất cả các máy tính có trong mạng.Mỗi card Ethernet đều được cung cấp một địa chỉ vật lý MAC (Media Access Control) duy nhất. Tất cả máy tính đều nhận dữ liệu, sau đó so sánh địa chỉ đích với địa chỉ vật lý MAC của nó. Nếu khớp, máy tính sẽ biết rằng nó chính là người nhận dữ liệu, nếu không nó sẽ lờ dữ liệu đi. 
+    + Hub họat động ở mức 1 của mô hình OSI.
+
+    ![](../images/hub.jpg)
