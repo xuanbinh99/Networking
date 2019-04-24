@@ -1,8 +1,19 @@
 # **Giới thiệu chung về Networking**
 
+## Mục lục
+[1. Giới thiệu chung](#gioithieu)
+[2. Mạng máy tính](#mangmaytinh)
+[3. Phân loại mạng máy tính](#phanloai)
+[4. Mô hình OSI](#mohinhosi)
+[5. Phân biệt giao thức UDP và TCP](#pbudptcp)
+[6. Tìm hiểu về Router, Switch, Hub, Repeater](#timhieuthietbi)
+
+
 ## **A. Mạng truyền thông và công nghệ mạng**
 
-### **1. Giới thiệu chung**
+<a name="gioithieu">
+
+### **1. Giới thiệu chung**</a>
 
 * **Computer communications** (truyền thông máy tính): là quá trình truyền dữ liệu từ thiết bị này qua thiết bị khác.
 * **End system** (các thiết bị gửi nhận đầu cuối): ví dụ Máy tính, điện thoại,...
@@ -17,7 +28,9 @@
     + **`Security`** (An ninh): Đảm bảo an toàn dữ liệu và các thành phần trong mạng.
     + **`Standard`** (Chuẩn): Thiết lập quy tắc và luật lệ cụ thể.
 
-### **2. Mạng máy tính**
+<a name="mangmaytinh">
+
+### **2. Mạng máy tính** </a>
 * Khái niệm: là tập hợp các máy tính và thiết bị kết nối với nhau qua các phương tiện truyền thông mạng.
 * Các thành phần mạng: Thiết bị, nút, máy tính.
 * Phương tiện và các giao thức xét tới 2 tiêu chí là **khả năng liên kết** (`connectivity`- đường truyền hoặc kết nối vật lý giữa các thành phần) và **ngôn ngữ** (`language`-bảng từ vựng cùng các quy tắc mà thành phần phải tuân thủ).
@@ -25,7 +38,10 @@
     + Cáp (Cable)
     + Không dây (Wireless)
 * Giao thức (**Protocols**): Hiểu đơn giản đó là ngôn ngữ và quy tắc được sử dụng để cách thành phần mạng có thể hiểu nhau.
-### **3. Phân loại mạng máy tính**
+
+<a name="phanloai">
+
+### **3. Phân loại mạng máy tính** </a>
 * Dựa trên phạm vi:
     + **LAN** (**L**ocal **A**rea **N**etwork - Mạng cục bộ): là mạng tư nhân như một toà nhà, văn phòng, khu vực các máy kết nối tới máy trạm để trao đổi tài nguyên. Mạng **LAN** gồm 3 đặc điểm:
         - Giới hạn phạm vi nhỏ
@@ -73,7 +89,9 @@
 
         ![](../images/Ring.png)
 
-### **4. Mô hình OSI** 
+<a name="mohinhosi">
+
+### **4. Mô hình OSI** </a>
 
 + **Khái niệm**
     - **Mô hình OSI** (**O**pen **S**ystems **I**nterconnection Reference Model, viết ngắn là OSI Model hoặc OSI Reference Model) - tạm dịch là Mô hình **tham chiếu kết nối hệ thống mở** - là một thiết kế dựa vào nguyên lý tầng cấp, lý giải kỹ thuật kết nối truyền thông giữa các máy vi tính và thiết kế giao thức mạng giữa chúng.
@@ -119,6 +137,7 @@
         +  Lớp này cung cấp các tài nguyên phần cứng để gửi và nhận dữ liệu  bao gồm xác định cáp, card và các thành phần vật lý
         + Ví dụ *Fast Ethernet, RS232* và *ATM*.
     
+
 + **Quy trình làm việc**
 
     ![](../images/quytrinh.gif)
@@ -127,7 +146,9 @@
 
 + **Lý do phải chia nhỏ gói tin ở mỗi tầng khi truyền tin :** Do mỗi gói tin có một 
 
-### **5. Phân biệt giao thức UDP và TCP**.
+<a name="pbudptcp">
+
+### **5. Phân biệt giao thức UDP và TCP**. </a>
 * Giống nhau:
     + Đều là giao thức cốt lõi của giao thức **TCP/IP** và nằm trong tầng **Transport** trong mô hình **OSI**, sử dụng để gửi các bit dữ liệu - được gọi là các gói tin - qua Internet.
     + Những gói tin này được xử lý tương tự bởi vì chúng được chuyển tiếp từ máy tính của bạn đến router trung gian và đến điểm đích.
@@ -141,7 +162,9 @@
     |Tính chất|Cho phép mất dữ liệu, không đảm bảo tin cậy, không sắp xếp thứ tự gói tin|Không cho phép mất dữ liệu, đảm bảo sự tin cậy, sắp xếp thứ tự các gói tin khi nhận|
     |Ứng dụng|Trong VoIP(công nghệ truyền hội thoại qua mạng), xem phim và chơi game trực tuyến hoặc ứng dụng trong **DNS**(Hệ thống phân giải tên miền)| **HTTP/HTTPS** (World Wide Web), **SMTP/POP3/IMAP** (e-mail) và **FTP** (truyền file)|
 
-### **6. Tìm hiểu về Router, Switch, Hub, Repeater**
+<a name="timhieuthietbi">
+
+### **6. Tìm hiểu về Router, Switch, Hub, Repeater** </a>
 * **Router** 
     + *Router* hay *thiết bị định tuyến* hoặc *bộ định tuyến*, là một thiết bị mạng máy tính nhằm kết nối 2 hay nhiều mạng với nhau để truyền dữ liệu, trong mô hình **OSI** Router nằm ở tầng Network.
     + *Router* là thiết bị tìm đường đi cho các gói tin trên mạng, nó không phải là một thiết bị chuyển mạch
