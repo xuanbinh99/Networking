@@ -82,7 +82,9 @@
     
     + **Mô hình**
 
+
         ![*7 lớp trong mô hình OSI*](https://techvccloud.mediacdn.vn/2018/9/14/photo-1-15368989749951226056584.jpg "Mô hình OSI")
+
 
         - **Application** - Tầng ứng dụng: 
             + Cung cấp giao diện cho ứng dụng và người dùng có thể tương tác thông với chương trình ứng dụng đó, cho phép người dùng truy nhập các thông tin và dữ liệu trên mạng thông qua chương trình ứng dụng
@@ -119,6 +121,7 @@
         - **Physical** - Tầng vật lý:
             +  Lớp này cung cấp các tài nguyên phần cứng để gửi và nhận dữ liệu  bao gồm xác định cáp, card và các thành phần vật lý
             + Ví dụ *Fast Ethernet, RS232* và *ATM*.
+
 ### **5. Phân biệt giao thức UDP và TCP**.
 * Giống nhau:
     + Đều là giao thức cốt lõi của giao thức **TCP/IP** và nằm trong tầng **Transport** trong mô hình **OSI**, sử dụng để gửi các bit dữ liệu - được gọi là các gói tin - qua Internet.
