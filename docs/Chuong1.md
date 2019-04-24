@@ -1,13 +1,20 @@
 # **Giới thiệu chung về Networking**
 
 ## Mục lục
+
 [1. Giới thiệu chung](#gioithieu)
+
 [2. Mạng máy tính](#mangmaytinh)
+
 [3. Phân loại mạng máy tính](#phanloai)
+
 [4. Mô hình OSI](#mohinhosi)
+
 [5. Phân biệt giao thức UDP và TCP](#pbudptcp)
+
 [6. Tìm hiểu về Router, Switch, Hub, Repeater](#timhieuthietbi)
 
+---
 
 ## **A. Mạng truyền thông và công nghệ mạng**
 
