@@ -151,7 +151,6 @@
 
     Gói tin gửi từ A sẽ đi qua các tầng và mỗi tầng thực hiện các chức năng của mình để gửi gói tin sang máy B
 
-+ **Lý do phải chia nhỏ gói tin ở mỗi tầng khi truyền tin :** Do mỗi gói tin có một 
 
 <a name="pbudptcp">
 
